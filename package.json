@@ -12,18 +12,20 @@
   },
   "license": "MIT",
   "author": "Donnie An",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "prettier": "npx prettier \"**/*.{js,json,md}\"",
     "eslint": "npx eslint --fix \"**/*.{js}\"",
     "cspell": "cspell \"**/*\"",
-    "commit": "git-cz",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
