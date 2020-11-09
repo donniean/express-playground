@@ -4,11 +4,11 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Hello World! root');
 });
 
 app.get('/api', (req, res) => {
-  res.send('api Hello World!');
+  res.send('Hello World! api');
 });
 
 app.listen(port, () => {
